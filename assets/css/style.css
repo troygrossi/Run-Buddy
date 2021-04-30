@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   /*color is a 32 bit sequence FF0000 red, 00FF00 green, 0000FF blue*/
   /*last byte is transparency*/
@@ -31,7 +36,23 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  display: inline;
 }
+/* must use 'a'(hyperlink ) selector to change hyperlink color? */
 header a {
+  text-decoration: none;
   color: #fce138;
+}
+header nav {
+  /* float makes the text "inline" rather than "block" and :right sends the text to the right */
+  float: right;
+  margin: 7px 0;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
 }
