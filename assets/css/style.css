@@ -1,0 +1,30 @@
+body {
+  /*color is a 32 bit sequence FF0000 red, 00FF00 green, 0000FF blue*/
+  /*last byte is transparency*/
+  color: #39a6b2;
+  /*font is in order of what operating system will try to use*/
+  /*some operating systems are branded with specific fonts*/
+  font-family: Helvetica, Arial, sans-serif;
+}
+header {
+  /* PADDING */
+  /*if only one property value is assigned 
+    then dimension applies to top,bottom,left,right*/
+  /*if two are assigned first applies to top/bottom, second to left/right*/
+  /*three is top,left/right, bottom*/
+  /*four will apply to top,right,bottom,left (clockwise)*/
+
+  /* This is also allowed
+ header {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+  }
+  */
+
+  padding: 20px 35px;
+  background-color: #39a6b2;
+}
+header h1 {
+}
