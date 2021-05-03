@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  /* important for box format sizing, we will usually do this */
+  box-sizing: border-box;
 }
 
 body {
@@ -55,4 +57,25 @@ header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
+}
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
+footer h3 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+footer div {
+  float: right;
+  /* line height: assigns how much vertical space should be between lines of text content */
+  line-height: 1.5;
+  /* aligns text to left/right/center; default is right */
+  text-align: right;
+}
+footer a {
+  color: #024e76;
 }
