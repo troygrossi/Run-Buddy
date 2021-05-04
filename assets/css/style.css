@@ -62,6 +62,11 @@ header nav ul li a {
 section {
   padding: 60px;
 }
+/* position:
+static-default, not affected by top:/bottom:/left:/right: adjustments 
+relative: relative to surrounding boxes
+absolute: relative to parent boxes, defaults to upper left
+fixed: relative to browser and will move with scrolling, defaults to upper left*/
 .hero {
   background-image: url("../images/hero-bg.jpg");
   height: 700px;
@@ -115,14 +120,19 @@ section {
 
 /* Demonstrates a way to center and  shrink block*/
 /* display: inline-block shrinks block to text size and entire block can be text aligned */
-.intro h2 {
+.title {
   display: inline-block;
   font-size: 55px;
   color: #024e76;
   margin-bottom: 35px;
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
-  border-color: #fce138;
+}
+.you-do {
+  border-color: #39a6b2;
+}
+.we-do {
+  border-color: #39a6b2;
 }
 
 /* Demonstrates a way to center and shrink block */
@@ -135,12 +145,57 @@ section {
   font-size: 20px;
   margin: 0 auto;
 }
-/* position:
-static-default, not affected by top:/bottom:/left:/right: adjustments 
-relative: relative to surrounding boxes
-absolute: relative to parent boxes, defaults to upper left
-fixed: relative to browser and will move with scrolling, defaults to upper left*/
+.intro {
+  background: #fce138;
+}
+.intro div {
+  margin-bottom: 80px;
+}
+.intro img {
+  width: 15%;
+  margin: 10px;
+}
+.intro h3 {
+  color: #024e76;
+  font-size: 46px;
+  margin-top: 10px;
+}
+.intro p {
+  color: #39a6b2;
+  font-size: 23px;
+}
+.intro span {
+  font-size: 38px;
+}
 
+/* trainer section */
+
+.meet-trainer {
+  border-color: #fce138;
+}
+
+.trainers {
+  text-align: center;
+}
+.first-trainer {
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background: #024e76;
+  color: #fce138;
+  overflow: auto;
+}
+/* float does not count as "content" in the box. In order to register the float content we need to add overflow: auto */
+.first-trainer img {
+  width: 35%;
+  float: left;
+}
+.first-bio {
+  padding: 35px;
+  float: left;
+  width: 65%;
+}
+
+/* Footer Section */
 footer {
   background: #fce138;
   width: 100%;
