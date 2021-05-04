@@ -29,7 +29,7 @@ header {
     padding-left: 25px;
   }
   */
-
+  width: 100%;
   padding: 20px 35px;
   background-color: #39a6b2;
 }
@@ -58,6 +58,63 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 22px;
 }
+
+section {
+  padding: 60px;
+}
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 510px;
+  color: #024e76;
+  /* -style: solid needed to add color */
+  border-style: solid;
+  /* Width applies to all sides */
+  border-width: 10px;
+  border-color: #024e76;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
+.hero-form h3 {
+  font-size: 35px;
+}
+.hero-form p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-input {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+/* position:
+static-default, not affected by top:/bottom:/left:/right: adjustments 
+relative: relative to surrounding boxes
+absolute: relative to parent boxes, defaults to upper left
+fixed: relative to browser and will move with scrolling, defaults to upper left*/
+
 footer {
   background: #fce138;
   width: 100%;
